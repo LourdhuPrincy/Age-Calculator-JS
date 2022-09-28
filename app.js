@@ -29,9 +29,14 @@ function calcAge(){
     const ageYear=cYear-bYear;
     const ageMonth=cMonth-bMonth;
     const ageDay=cDay-bDay;
+    let age;
 
-    const age=`${ageYear} years ${ageMonth} months ${ageDay} days`;
-    return age;
+    if(ageYear<0){
+       age='Not Yet Born'
+    }else{
+        age=`${ageYear} years ${ageMonth} months ${ageDay} days`;
+    }
+ return age;
 }
 
 function displayAge(){
